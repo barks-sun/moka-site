@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>下载 | 墨卡</title>
+    <meta name="description" content="墨卡官方下载入口。">
+    <link rel="icon" href="assets/moka.png">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="墨卡首页">
+        <img src="assets/moka.png" alt="">
+        <span>墨卡</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="download.html" aria-current="page">下载</a>
+        <a href="support.html">支持</a>
+        <a href="privacy.html">隐私</a>
+      </nav>
+    </header>
+
+    <main class="document">
+      <section class="doc-body">
+        <p class="eyebrow">Download</p>
+        <h1>下载墨卡</h1>
+        <p>请从官方渠道安装墨卡。Android 包开放后，本页会提供版本号、发布时间、下载链接和 SHA-256 校验值。</p>
+
+        <div class="download-grid">
+          <article class="download-card">
+            <span class="label">iPhone</span>
+            <h2>App Store</h2>
+            <p>iPhone 版准备上架 App Store。上线后，本页会更新为正式下载入口。</p>
+            <span class="button disabled">即将上线</span>
+          </article>
+          <article class="download-card">
+            <span class="label">Apple silicon Mac</span>
+            <h2>Mac App Store</h2>
+            <p>搭载 Apple silicon 的 Mac 可通过 Mac App Store 安装 iPhone 版墨卡。</p>
+            <span class="button disabled">随 iPhone 版开放</span>
+          </article>
+          <article class="download-card accent">
+            <span class="label">Android</span>
+            <h2>官方 APK</h2>
+            <p>Android 版将通过本站发布，并提供校验值。请不要安装来源不明的二次打包版本。</p>
+            <a class="button secondary" href="#android">查看 Android 下载</a>
+          </article>
+        </div>
+
+<!-- android-release-start -->
+        <h2 id="android">Android 0.3.5+52</h2>
+        <p class="download-note">发布于 2026-05-30。请优先下载通用版 APK；如果你确认手机是 ARM64 架构，也可以下载体积更小的 arm64-v8a 版本。</p>
+
+        <div class="apk-list">
+          <a class="apk-link primary-apk" href="https://github.com/barks-sun/moka-site/releases/download/android-v0.3.5-52/moka-0.3.5+52.apk">
+            <span>
+              <strong>通用版 APK</strong>
+              <small>moka-0.3.5+52.apk</small>
+            </span>
+            <em>推荐</em>
+          </a>
+          <a class="apk-link" href="https://github.com/barks-sun/moka-site/releases/download/android-v0.3.5-52/moka-0.3.5+52-arm64-v8a.apk">
+            <span>
+              <strong>ARM64 APK</strong>
+              <small>moka-0.3.5+52-arm64-v8a.apk</small>
+            </span>
+            <em>体积较小</em>
+          </a>
+          <a class="apk-link" href="https://github.com/barks-sun/moka-site/releases/download/android-v0.3.5-52/SHA256SUMS.txt">
+            <span>
+              <strong>SHA-256 校验文件</strong>
+              <small>SHA256SUMS.txt</small>
+            </span>
+            <em>校验</em>
+          </a>
+        </div>
+
+        <div class="release-table" role="table" aria-label="Android 发布信息">
+          <div role="row">
+            <span role="cell">当前公开版本</span>
+            <strong role="cell">0.3.5+52</strong>
+          </div>
+          <div role="row">
+            <span role="cell">发布时间</span>
+            <strong role="cell">2026-05-30</strong>
+          </div>
+          <div role="row">
+            <span role="cell">发布方式</span>
+            <strong role="cell">本站下载页与 GitHub Releases</strong>
+          </div>
+          <div role="row">
+            <span role="cell">通用版 SHA-256</span>
+            <strong role="cell" class="checksum">fb0bcd09fe7a0b09032ed36ca2fa09a6b45621444be47aa559f70f11c63da31c</strong>
+          </div>
+          <div role="row">
+            <span role="cell">ARM64 SHA-256</span>
+            <strong role="cell" class="checksum">5aadb3d67666e9c99e1b8d6dab64a6a1d62cde617d690f237edf0ba03a5af38e</strong>
+          </div>
+        </div>
+<!-- android-release-end -->
+
+        <h2>安装提醒</h2>
+        <ul>
+          <li>只从本站或本站链接的官方 Release 下载 Android 安装包。</li>
+          <li>安装前核对版本号和 SHA-256 校验值。</li>
+          <li>不要安装陌生网站、网盘或聊天群里来源不明的 APK。</li>
+          <li>如果系统提示未知来源安装，请确认下载来源后再继续。</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 efonly</span>
+      <span>墨卡 Moka</span>
+      <a href="support.html">支持与反馈</a>
+    </footer>
+  </body>
+</html>
