@@ -4,6 +4,10 @@
 
 它可以帮助你同步和整理阅读书架、书摘、想法和阅读进度，并把喜欢的片段生成干净的分享卡片。
 
+官网：https://barks-sun.github.io/moka-site/
+
+公开仓库：https://github.com/barks-sun/moka-site
+
 ## 页面
 
 - 官网首页：`index.html`
