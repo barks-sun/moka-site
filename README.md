@@ -6,8 +6,6 @@
 
 官网：https://barks-sun.github.io/moka-site/
 
-公开仓库：https://github.com/barks-sun/moka-site
-
 ## 页面
 
 - 官网首页：`index.html`
@@ -23,8 +21,4 @@ Android 官方安装包通过本站和 GitHub Releases 发布，并提供版本�
 
 ## 支持
 
-如需反馈问题或建议，请查看：
-
-```text
-support.html
-```
+如需反馈问题或建议，请查看官网的支持与反馈页面。
