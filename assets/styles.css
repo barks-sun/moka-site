@@ -92,14 +92,12 @@ img {
 .hero {
   min-height: min(78vh, 760px);
   display: grid;
-  grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.72fr);
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.88fr);
   gap: clamp(28px, 5vw, 76px);
   align-items: center;
   padding: 70px clamp(20px, 6vw, 92px) 54px;
   border-bottom: 1px solid var(--line);
-  background:
-    radial-gradient(circle at 90% 18%, rgba(47, 122, 101, 0.14), transparent 28%),
-    linear-gradient(120deg, #f9fbfa 0%, #f2f7f4 58%, #e8f0ec 100%);
+  background: #f8fbf9;
 }
 
 .hero-inner {
@@ -202,113 +200,40 @@ h3 {
   cursor: not-allowed;
 }
 
-.phone-preview {
+.hero-screens {
   justify-self: end;
-  width: min(380px, 100%);
-  padding: 18px;
-  border: 1px solid rgba(21, 35, 30, 0.08);
-  border-radius: 28px;
-  background: #fdfefe;
+  position: relative;
+  width: min(460px, 100%);
+  min-height: 560px;
+}
+
+.screen-shot {
+  display: block;
+  width: min(270px, 62vw);
+  aspect-ratio: 1242 / 2688;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid rgba(21, 35, 30, 0.12);
+  border-radius: 8px;
+  background: #ffffff;
   box-shadow: var(--shadow);
 }
 
-.phone-bar {
-  display: flex;
-  gap: 6px;
-  margin-bottom: 18px;
+.screen-main {
+  margin-left: auto;
 }
 
-.phone-bar span {
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: var(--line);
+.screen-side {
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  width: min(220px, 48vw);
 }
 
-.phone-bar span:first-child {
-  background: var(--rose);
-}
-
-.phone-bar span:nth-child(2) {
-  background: var(--amber);
-}
-
-.phone-bar span:nth-child(3) {
-  background: var(--brand);
-}
-
-.preview-header,
 .release-row {
   display: flex;
   justify-content: space-between;
   gap: 18px;
-}
-
-.preview-header {
-  align-items: baseline;
-  margin-bottom: 14px;
-}
-
-.preview-header strong {
-  font-size: 24px;
-}
-
-.preview-header span {
-  color: var(--muted);
-}
-
-.quote-card {
-  padding: 22px;
-  border-radius: 10px;
-  color: #19372e;
-  background: #e8f4ef;
-}
-
-.quote-card p {
-  margin-bottom: 18px;
-  font-size: 20px;
-  line-height: 1.55;
-  font-weight: 650;
-}
-
-.quote-card footer {
-  color: #557067;
-  font-size: 14px;
-}
-
-.tag-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 16px 0 18px;
-}
-
-.tag-row span {
-  padding: 5px 9px;
-  color: var(--brand-dark);
-  font-size: 13px;
-  border: 1px solid #cae0d6;
-  border-radius: 999px;
-  background: #f6faf8;
-}
-
-.preview-list {
-  display: grid;
-  gap: 9px;
-}
-
-.preview-list span {
-  height: 12px;
-  border-radius: 999px;
-  background: #ecf1ee;
-}
-
-.preview-list span:nth-child(2) {
-  width: 78%;
-}
-
-.preview-list span:nth-child(3) {
-  width: 56%;
 }
 
 .section {
@@ -367,13 +292,17 @@ h3 {
 .download-card p,
 .detail-band p,
 .release-band p,
+.workflow-section p,
+.screenshot-band p,
 .doc-body p,
 .doc-body li {
   color: var(--muted);
 }
 
 .detail-band,
-.release-band {
+.release-band,
+.workflow-section,
+.screenshot-band {
   justify-content: space-between;
   gap: 28px;
   padding: 48px;
@@ -384,13 +313,57 @@ h3 {
 }
 
 .detail-band div,
-.release-copy {
+.release-copy,
+.workflow-copy,
+.screenshot-band div {
   max-width: 720px;
 }
 
-.release-band {
+.release-band,
+.workflow-section,
+.screenshot-band {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.9fr);
+}
+
+.workflow-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.workflow-grid article {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.workflow-grid article:last-child {
+  border-bottom: 0;
+}
+
+.workflow-grid span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--brand);
+  font-size: 13px;
+  font-weight: 780;
+}
+
+.workflow-grid strong {
+  display: block;
+  font-size: 18px;
+  line-height: 1.38;
+}
+
+.screenshot-band {
+  align-items: center;
+}
+
+.screenshot-band img {
+  width: min(280px, 100%);
+  justify-self: center;
+  border: 1px solid rgba(21, 35, 30, 0.12);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
 }
 
 .release-list {
@@ -609,13 +582,15 @@ details p {
 
 @media (max-width: 980px) {
   .hero,
-  .release-band {
+  .release-band,
+  .workflow-section,
+  .screenshot-band {
     grid-template-columns: 1fr;
   }
 
-  .phone-preview {
+  .hero-screens {
     justify-self: start;
-    width: min(420px, 100%);
+    width: min(480px, 100%);
   }
 
   .feature-grid,
@@ -677,7 +652,9 @@ details p {
   }
 
   .detail-band,
-  .release-band {
+  .release-band,
+  .workflow-section,
+  .screenshot-band {
     padding: 28px;
   }
 
