@@ -3,7 +3,9 @@
   "buildNumber": 57,
   "releasedAt": "2026-06-03",
   "releaseNotes": [
-    "优化体验并修复问题。"
+    "新建书摘页移除冗余字段标题，录入界面更清爽。",
+    "空内容保存提示改为更自然的“内容不能为空”。",
+    "更新官网截图展示、支持页说明和 Android 下载元数据。"
   ],
   "downloadPageUrl": "https://barks-sun.github.io/moka-site/download.html#android",
   "android": {

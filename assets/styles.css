@@ -83,6 +83,21 @@ img {
   border-radius: 8px;
 }
 
+.nav .nav-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+.github-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 .nav a:hover,
 .nav a[aria-current="page"] {
   color: var(--brand-dark);
@@ -629,6 +644,12 @@ details p {
 
   .nav a {
     padding: 7px 9px;
+  }
+
+  .nav .nav-icon-link {
+    width: 34px;
+    height: 34px;
+    padding: 0;
   }
 
   .hero {
