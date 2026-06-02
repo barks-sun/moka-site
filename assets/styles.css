@@ -87,15 +87,22 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
+  gap: 6px;
+  min-width: 40px;
   height: 40px;
-  padding: 0;
+  padding: 0 10px;
 }
 
 .github-icon {
-  width: 20px;
-  height: 20px;
+  flex: none;
+  width: 19px;
+  height: 19px;
   fill: currentColor;
+}
+
+.nav-icon-label {
+  font-size: 14px;
+  font-weight: 720;
 }
 
 .nav a:hover,
@@ -376,21 +383,20 @@ h3 {
 
 .share-preview {
   justify-self: center;
-  width: min(360px, 100%);
-  height: 430px;
   margin: 0;
-  overflow: hidden;
+}
+
+.share-preview img {
+  display: block;
+  width: auto;
+  height: clamp(360px, 44vw, 460px);
+  max-width: 100%;
+  object-fit: contain;
+  object-position: top;
   border: 1px solid rgba(21, 35, 30, 0.12);
   border-radius: 8px;
   background: #ffffff;
   box-shadow: var(--shadow);
-}
-
-.share-preview img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 24%;
 }
 
 .release-list {
@@ -648,8 +654,13 @@ details p {
 
   .nav .nav-icon-link {
     width: 34px;
+    min-width: 34px;
     height: 34px;
     padding: 0;
+  }
+
+  .nav-icon-label {
+    display: none;
   }
 
   .hero {
@@ -705,8 +716,11 @@ details p {
   }
 
   .share-preview {
-    width: 100%;
-    height: 360px;
+    width: auto;
+  }
+
+  .share-preview img {
+    height: 380px;
   }
 
   .contact-panel,
