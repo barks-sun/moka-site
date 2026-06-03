@@ -509,6 +509,7 @@ h3 {
   background: #eef3f0;
   color: #24473d;
   font-family: var(--font-mono);
+  overflow-wrap: anywhere;
 }
 
 .contact-panel {
