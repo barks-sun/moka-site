@@ -1,35 +1,47 @@
 {
   "version": "0.4.2",
-  "buildNumber": 60,
+  "buildNumber": 61,
   "releasedAt": "2026-06-03",
   "releaseNotes": [
-    "优化书籍详情页的阅读记录展示，补充累计阅读、阅读天数、想法笔记、单日最长阅读和近期阅读分布。",
-    "优化分享这本书的海报排版，书籍封面、阅读状态和阅读数据展示更清晰。",
-    "修正想法笔记条数统计，并移除书籍分享中的不可靠阅读进度百分比。",
-    "书籍详情更多菜单移除低频的连接管理入口，保留与当前书籍直接相关的操作。"
+    "修复 Android 应用内更新的安装包选择，避免部分设备更新时提示无法降级安装。",
+    "应用内更新会按设备架构选择合适的 APK，并保留通用版作为兼容兜底。"
   ],
   "downloadPageUrl": "https://barks-sun.github.io/moka-site/download.html#android",
   "android": {
     "packageId": "com.efonly.moka",
-    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.2-60/moka-0.4.2+60-arm64-v8a.apk",
-    "fileName": "moka-0.4.2+60-arm64-v8a.apk",
-    "sha256": "b32c0ae8852ff5f5762229df397bfbbd38715b262fcddeba9b548e8cc19c889c",
-    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.2-60/SHA256SUMS.txt",
+    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.2-61/moka-0.4.2+61-arm64-v8a.apk",
+    "fileName": "moka-0.4.2+61-arm64-v8a.apk",
+    "sha256": "10dc5519cd5e37959b8be846563f9814c9cef5b57314f7e544f8fa83cf1451f4",
+    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.2-61/SHA256SUMS.txt",
     "downloadPageUrl": "https://barks-sun.github.io/moka-site/download.html#android",
     "packages": {
       "arm64-v8a": {
         "abi": "arm64-v8a",
-        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.2-60/moka-0.4.2+60-arm64-v8a.apk",
-        "fileName": "moka-0.4.2+60-arm64-v8a.apk",
-        "sha256": "b32c0ae8852ff5f5762229df397bfbbd38715b262fcddeba9b548e8cc19c889c",
-        "versionCode": 2060
+        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.2-61/moka-0.4.2+61-arm64-v8a.apk",
+        "fileName": "moka-0.4.2+61-arm64-v8a.apk",
+        "sha256": "10dc5519cd5e37959b8be846563f9814c9cef5b57314f7e544f8fa83cf1451f4",
+        "versionCode": 2061
+      },
+      "armeabi-v7a": {
+        "abi": "armeabi-v7a",
+        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.2-61/moka-0.4.2+61-armeabi-v7a.apk",
+        "fileName": "moka-0.4.2+61-armeabi-v7a.apk",
+        "sha256": "de5590c2c1c2fa923fcc15a38d6fe616b2234742fd7f74a7cfd75cdab7b23bc9",
+        "versionCode": 1061
+      },
+      "x86_64": {
+        "abi": "x86_64",
+        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.2-61/moka-0.4.2+61-x86_64.apk",
+        "fileName": "moka-0.4.2+61-x86_64.apk",
+        "sha256": "3d7cdbd43cd0827205221c65909dedf069e8fab97841bfbc5dbe3e0e318ffb66",
+        "versionCode": 4061
       },
       "universal": {
         "abi": "universal",
-        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.2-60/moka-0.4.2+60.apk",
-        "fileName": "moka-0.4.2+60.apk",
-        "sha256": "cfe88bbd74e49d9b19eb13c3d2e545b873a65e36ee5a06894335fc0f83f9ad9d",
-        "versionCode": 60
+        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.2-61/moka-0.4.2+61.apk",
+        "fileName": "moka-0.4.2+61.apk",
+        "sha256": "1935178cad89ba1aae6a8b080e3fef6117cfd2d4864f270fe2a97fbd6845b4f2",
+        "versionCode": 61
       }
     }
   }
