@@ -11,9 +11,9 @@
   "downloadPageUrl": "https://barks-sun.github.io/moka-site/download.html#android",
   "android": {
     "packageId": "com.efonly.moka",
-    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.2-60/moka-0.4.2+60.apk",
-    "fileName": "moka-0.4.2+60.apk",
-    "sha256": "cfe88bbd74e49d9b19eb13c3d2e545b873a65e36ee5a06894335fc0f83f9ad9d",
+    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.2-60/moka-0.4.2+60-arm64-v8a.apk",
+    "fileName": "moka-0.4.2+60-arm64-v8a.apk",
+    "sha256": "b32c0ae8852ff5f5762229df397bfbbd38715b262fcddeba9b548e8cc19c889c",
     "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.2-60/SHA256SUMS.txt",
     "downloadPageUrl": "https://barks-sun.github.io/moka-site/download.html#android"
   }
