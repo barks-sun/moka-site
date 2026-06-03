@@ -1,19 +1,20 @@
 {
-  "version": "0.4.1",
-  "buildNumber": 57,
+  "version": "0.4.2",
+  "buildNumber": 60,
   "releasedAt": "2026-06-03",
   "releaseNotes": [
-    "新建书摘页移除冗余字段标题，录入界面更清爽。",
-    "空内容保存提示改为更自然的“内容不能为空”。",
-    "更新官网截图展示、支持页说明和 Android 下载元数据。"
+    "优化书籍详情页的阅读记录展示，补充累计阅读、阅读天数、想法笔记、单日最长阅读和近期阅读分布。",
+    "优化分享这本书的海报排版，书籍封面、阅读状态和阅读数据展示更清晰。",
+    "修正想法笔记条数统计，并移除书籍分享中的不可靠阅读进度百分比。",
+    "书籍详情更多菜单移除低频的连接管理入口，保留与当前书籍直接相关的操作。"
   ],
   "downloadPageUrl": "https://barks-sun.github.io/moka-site/download.html#android",
   "android": {
     "packageId": "com.efonly.moka",
-    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.1-57/moka-0.4.1+57.apk",
-    "fileName": "moka-0.4.1+57.apk",
-    "sha256": "c17a7e56a2020123bc0dcc855611d00fa98bbe6e07e2bbe6588b500685d833c1",
-    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.1-57/SHA256SUMS.txt",
+    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.2-60/moka-0.4.2+60.apk",
+    "fileName": "moka-0.4.2+60.apk",
+    "sha256": "cfe88bbd74e49d9b19eb13c3d2e545b873a65e36ee5a06894335fc0f83f9ad9d",
+    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.2-60/SHA256SUMS.txt",
     "downloadPageUrl": "https://barks-sun.github.io/moka-site/download.html#android"
   }
 }
