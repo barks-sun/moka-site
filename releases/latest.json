@@ -11,37 +11,23 @@
   "downloadPageUrl": "https://barks-sun.github.io/moka-site/download.html#android",
   "android": {
     "packageId": "com.efonly.moka",
-    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.3-62/moka-0.4.3+62-arm64-v8a.apk",
-    "fileName": "moka-0.4.3+62-arm64-v8a.apk",
+    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.3-62/moka-android-arm64-v8a.apk",
+    "fileName": "moka-android-arm64-v8a.apk",
     "sha256": "4c175e996d77df8ff7909ea1691cc3d25cc3fa3b3649d2c546fdc320f601f83e",
     "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.3-62/SHA256SUMS.txt",
     "downloadPageUrl": "https://barks-sun.github.io/moka-site/download.html#android",
     "packages": {
       "arm64-v8a": {
         "abi": "arm64-v8a",
-        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.3-62/moka-0.4.3+62-arm64-v8a.apk",
-        "fileName": "moka-0.4.3+62-arm64-v8a.apk",
+        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.3-62/moka-android-arm64-v8a.apk",
+        "fileName": "moka-android-arm64-v8a.apk",
         "sha256": "4c175e996d77df8ff7909ea1691cc3d25cc3fa3b3649d2c546fdc320f601f83e",
         "versionCode": 2062
       },
-      "armeabi-v7a": {
-        "abi": "armeabi-v7a",
-        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.3-62/moka-0.4.3+62-armeabi-v7a.apk",
-        "fileName": "moka-0.4.3+62-armeabi-v7a.apk",
-        "sha256": "66d44bda5f8dfb399a7236f818d4fa4b00261599092ea8f680174e36837113ca",
-        "versionCode": 1062
-      },
-      "x86_64": {
-        "abi": "x86_64",
-        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.3-62/moka-0.4.3+62-x86_64.apk",
-        "fileName": "moka-0.4.3+62-x86_64.apk",
-        "sha256": "99dbf3c26569bfc8ce14c191cfb3302ccbbae64698d07338acfa413680a7a8e1",
-        "versionCode": 4062
-      },
       "universal": {
         "abi": "universal",
-        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.3-62/moka-0.4.3+62.apk",
-        "fileName": "moka-0.4.3+62.apk",
+        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.3-62/moka-android.apk",
+        "fileName": "moka-android.apk",
         "sha256": "695a03c6b5de87c120164fc9cbf62b43ee31d0dd4852f6de270879e9655927f9",
         "versionCode": 62
       }
