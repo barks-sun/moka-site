@@ -442,6 +442,11 @@ h3 {
   border-bottom: 1px solid var(--line);
 }
 
+.release-link:hover .state {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .release-row:last-child {
   border-bottom: 0;
 }
