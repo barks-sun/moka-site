@@ -271,11 +271,20 @@ h3 {
 }
 
 .intro {
-  max-width: 860px;
+  width: min(1040px, calc(100% - clamp(40px, 12vw, 184px)));
+  max-width: none;
   margin-left: clamp(20px, 6vw, 92px);
+  margin-right: auto;
+}
+
+.intro h2 {
+  max-width: 1000px;
+  font-size: clamp(30px, 3.2vw, 42px);
+  line-height: 1.18;
 }
 
 .intro p:last-child {
+  max-width: 900px;
   color: var(--muted);
   font-size: 20px;
 }
@@ -722,7 +731,9 @@ details p {
   }
 
   .intro {
+    width: min(100% - 28px, 1120px);
     margin-left: auto;
+    margin-right: auto;
   }
 
   .feature-grid,
