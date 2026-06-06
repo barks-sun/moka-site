@@ -15,7 +15,9 @@
 
 ## 下载
 
-iPhone 版准备上架 App Store。
+iPhone 版已在 App Store 上架：
+
+https://apps.apple.com/cn/app/%E5%A2%A8%E5%8D%A1-moka/id6775122875
 
 Android 官方安装包通过本站和 GitHub Releases 发布，并提供版本号与 SHA-256 校验值。
 
