@@ -19,6 +19,15 @@
   --mist: #dfe8ea;
   --rule: #d9d5cf;
   --shadow: 0 24px 70px rgba(26, 47, 60, 0.12);
+  --layout-wide: 1280px;
+  --layout-content: 1180px;
+  --layout-document: 980px;
+  --page-gutter: clamp(14px, 3vw, 40px);
+  --section-space: clamp(64px, 7vw, 98px);
+  --flow-node-size: 14px;
+  --flow-node-center: 7px;
+  --flow-node-offset: 14px;
+  --flow-node-axis: calc(var(--flow-node-offset) + var(--flow-node-center));
   --font-display: "LXGW WenKai", "霞鹜文楷", "STKaiti", "KaiTi", serif;
   --font-body: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
@@ -446,19 +455,9 @@ h3 {
   position: relative;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  width: min(1180px, calc(100% - 40px));
+  width: min(var(--layout-content), calc(100% - (var(--page-gutter) * 2)));
   margin: 0 auto;
   padding: 58px 0 24px;
-}
-
-.journey-section::before {
-  content: "";
-  position: absolute;
-  top: 78px;
-  right: 10%;
-  left: 10%;
-  height: 1px;
-  background: var(--rule);
 }
 
 .journey-section article {
@@ -469,13 +468,24 @@ h3 {
 .journey-section article::before {
   content: "";
   position: absolute;
-  top: 14px;
+  top: var(--flow-node-offset);
   left: 0;
-  width: 12px;
-  height: 12px;
+  z-index: 1;
+  width: var(--flow-node-size);
+  height: var(--flow-node-size);
   background: var(--paper);
   border: 3px solid var(--coral);
   border-radius: 50%;
+}
+
+.journey-section article:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: var(--flow-node-axis);
+  right: calc(var(--flow-node-center) * -1);
+  left: var(--flow-node-center);
+  height: 1px;
+  background: var(--rule);
 }
 
 .journey-section span {
@@ -493,9 +503,9 @@ h3 {
 }
 
 .section {
-  width: min(1280px, calc(100% - 40px));
+  width: min(var(--layout-wide), calc(100% - (var(--page-gutter) * 2)));
   margin: 0 auto;
-  padding: clamp(64px, 7vw, 98px) 0;
+  padding: var(--section-space) 0;
 }
 
 .product-chapter,
@@ -826,7 +836,7 @@ h3 {
   grid-template-columns: minmax(300px, 0.9fr) minmax(430px, 0.85fr);
   gap: clamp(50px, 9vw, 140px);
   align-items: center;
-  width: min(1180px, calc(100% - 40px));
+  width: min(var(--layout-content), calc(100% - (var(--page-gutter) * 2)));
   margin: 0 auto;
   padding: clamp(82px, 10vw, 142px) 0;
 }
@@ -1017,7 +1027,7 @@ h3 {
 
 /* Document, support and download pages */
 .document {
-  width: min(980px, calc(100% - 40px));
+  width: min(var(--layout-document), calc(100% - (var(--page-gutter) * 2)));
   margin: 0 auto;
   padding: 64px 0 84px;
 }
@@ -1253,7 +1263,34 @@ details p {
   }
 }
 
+@media (max-width: 900px) {
+  .journey-section {
+    --flow-node-offset: 18px;
+    grid-template-columns: 1fr;
+    padding: 42px 0 28px;
+  }
+
+  .journey-section article {
+    min-height: 82px;
+    padding: 12px 0 26px 40px;
+  }
+
+  .journey-section article:not(:last-child)::after {
+    top: var(--flow-node-axis);
+    right: auto;
+    bottom: calc(var(--flow-node-axis) * -1);
+    left: var(--flow-node-center);
+    width: 1px;
+    height: auto;
+  }
+}
+
 @media (max-width: 720px) {
+  :root {
+    --page-gutter: 14px;
+    --section-space: 68px;
+  }
+
   .site-header {
     min-height: 62px;
     padding: 10px 14px;
@@ -1287,7 +1324,7 @@ details p {
   }
 
   .hero h1 {
-    font-size: clamp(40px, 10.8vw, 48px);
+    font-size: clamp(32px, 9.8vw, 48px);
   }
 
   .hero-subcopy {
@@ -1315,33 +1352,6 @@ details p {
 
   .excerpt-sheet blockquote {
     font-size: 24px;
-  }
-
-  .journey-section {
-    grid-template-columns: 1fr 1fr;
-    padding-top: 62px;
-  }
-
-  .journey-section::before {
-    display: none;
-  }
-
-  .journey-section article {
-    padding: 38px 12px 20px 0;
-  }
-
-  .journey-section article::before {
-    top: 7px;
-  }
-
-  .section,
-  .memory-inner,
-  .document {
-    width: min(100% - 28px, 1180px);
-  }
-
-  .section {
-    padding: 68px 0;
   }
 
   .organizer-demo,
