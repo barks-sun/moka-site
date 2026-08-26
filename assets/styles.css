@@ -84,7 +84,7 @@ h3 {
 
 h2 {
   margin-bottom: 18px;
-  font-size: clamp(34px, 4.4vw, 62px);
+  font-size: clamp(32px, 3.8vw, 52px);
   line-height: 1.16;
   letter-spacing: -0.035em;
 }
@@ -212,22 +212,17 @@ h3 {
 
 .hero h1 {
   margin-bottom: 24px;
-  font-size: clamp(52px, 6.1vw, 86px);
-  line-height: 1.02;
-  letter-spacing: -0.055em;
-}
-
-.hero h1 span,
-.hero h1 em {
-  display: block;
-  width: max-content;
-  max-width: 100%;
-  white-space: nowrap;
+  max-width: 760px;
+  font-size: clamp(50px, 5.4vw, 76px);
+  line-height: 1.12;
+  letter-spacing: -0.045em;
 }
 
 .hero h1 em {
+  display: inline-block;
   color: var(--coral);
   font-style: normal;
+  white-space: nowrap;
 }
 
 .hero-subcopy {
@@ -320,20 +315,6 @@ h3 {
   background: var(--page);
   border: 1px solid rgba(26, 47, 60, 0.17);
   box-shadow: var(--shadow);
-  transform: rotate(0.8deg);
-  animation: settle 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
-}
-
-.excerpt-sheet::after {
-  content: "";
-  position: absolute;
-  right: -1px;
-  bottom: -1px;
-  width: 42px;
-  height: 42px;
-  background: linear-gradient(135deg, transparent 48%, var(--page-muted) 49%);
-  border-right: 1px solid rgba(26, 47, 60, 0.1);
-  border-bottom: 1px solid rgba(26, 47, 60, 0.1);
 }
 
 .excerpt-meta {
@@ -387,8 +368,8 @@ h3 {
 .excerpt-sheet blockquote {
   margin-bottom: 34px;
   font-family: var(--font-display);
-  font-size: clamp(25px, 2.7vw, 38px);
-  line-height: 1.75;
+  font-size: clamp(22px, 1.8vw, 28px);
+  line-height: 1.6;
 }
 
 .echo-thread {
@@ -467,13 +448,13 @@ h3 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
-  padding: 78px 0 42px;
+  padding: 58px 0 24px;
 }
 
 .journey-section::before {
   content: "";
   position: absolute;
-  top: 98px;
+  top: 78px;
   right: 10%;
   left: 10%;
   height: 1px;
@@ -512,22 +493,26 @@ h3 {
 }
 
 .section {
-  width: min(1180px, calc(100% - 40px));
+  width: min(1280px, calc(100% - 40px));
   margin: 0 auto;
-  padding: clamp(74px, 9vw, 128px) 0;
+  padding: clamp(64px, 7vw, 98px) 0;
 }
 
 .product-chapter,
 .scope-section,
 .reflection-section {
   display: grid;
-  grid-template-columns: minmax(300px, 0.78fr) minmax(500px, 1.22fr);
-  gap: clamp(46px, 8vw, 118px);
+  grid-template-columns: minmax(440px, 0.94fr) minmax(500px, 1.06fr);
+  gap: clamp(46px, 6vw, 84px);
   align-items: center;
 }
 
 .chapter-copy {
-  max-width: 520px;
+  max-width: 600px;
+}
+
+.chapter-copy h2 {
+  font-size: clamp(34px, 3.4vw, 50px);
 }
 
 .chapter-copy > p:not(.eyebrow) {
@@ -601,12 +586,10 @@ h3 {
   font-size: 25px;
 }
 
-.demo-titlebar button {
-  padding: 8px 12px;
-  background: transparent;
-  border: 1px solid var(--rule);
-  border-radius: 4px;
-  pointer-events: none;
+.sort-label {
+  color: var(--ink-soft);
+  font-size: 13px;
+  white-space: nowrap;
 }
 
 .filter-row {
@@ -663,7 +646,7 @@ h3 {
 }
 
 .scope-section {
-  grid-template-columns: minmax(500px, 1.22fr) minmax(300px, 0.78fr);
+  grid-template-columns: minmax(500px, 1.06fr) minmax(440px, 0.94fr);
   border-top: 1px solid var(--rule);
 }
 
@@ -737,11 +720,11 @@ h3 {
 }
 
 .compact-copy {
-  max-width: 470px;
+  max-width: 560px;
 }
 
 .reflection-section {
-  grid-template-columns: minmax(300px, 0.82fr) minmax(500px, 1.18fr);
+  grid-template-columns: minmax(440px, 0.94fr) minmax(500px, 1.06fr);
   border-top: 1px solid var(--rule);
 }
 
@@ -1219,17 +1202,6 @@ details p {
   overflow-wrap: anywhere;
 }
 
-@keyframes settle {
-  from {
-    opacity: 0;
-    transform: translateY(18px) rotate(2deg);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) rotate(0.8deg);
-  }
-}
-
 @media (max-width: 1040px) {
   .nav-product {
     display: none;
@@ -1315,7 +1287,7 @@ details p {
   }
 
   .hero h1 {
-    font-size: clamp(42px, 11.5vw, 50px);
+    font-size: clamp(40px, 10.8vw, 48px);
   }
 
   .hero-subcopy {
