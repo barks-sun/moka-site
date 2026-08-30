@@ -1,34 +1,32 @@
 {
-  "version": "0.4.10",
-  "buildNumber": 73,
+  "version": "0.4.11",
+  "buildNumber": 74,
   "releasedAt": "2026-08-30",
   "releaseNotes": [
-    "修复微信读书想法较多时可能只读取部分内容的问题，避免不完整数据进入导入流程。",
-    "优化数千条划线与笔记的读取、解析和本地比对性能，减少大批量导入时的等待与卡顿。",
-    "改进微信读书导入预览的加载提示，显示读取数量和当前处理阶段。"
+    "修复发现新版本后点击“查看”未直接显示应用更新选项的问题，现在会自动定位到“应用更新”区域。"
   ],
   "downloadPageUrl": "https://barks-sun.github.io/moka-site/download.html#android",
   "android": {
     "packageId": "com.efonly.moka",
-    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.10-73/moka-android-arm64-v8a.apk",
+    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.11-74/moka-android-arm64-v8a.apk",
     "fileName": "moka-android-arm64-v8a.apk",
-    "sha256": "de6c623fd98f9fc830ab8b1c0dc914a87f5029a282921f8d83d869bdfa94111e",
-    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.10-73/SHA256SUMS.txt",
+    "sha256": "984533d644fd46fb009d6d623124742baa329d45aab2dad5c4785b5d6f559b05",
+    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.11-74/SHA256SUMS.txt",
     "downloadPageUrl": "https://barks-sun.github.io/moka-site/download.html#android",
     "packages": {
       "arm64-v8a": {
         "abi": "arm64-v8a",
-        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.10-73/moka-android-arm64-v8a.apk",
+        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.11-74/moka-android-arm64-v8a.apk",
         "fileName": "moka-android-arm64-v8a.apk",
-        "sha256": "de6c623fd98f9fc830ab8b1c0dc914a87f5029a282921f8d83d869bdfa94111e",
-        "versionCode": 2073
+        "sha256": "984533d644fd46fb009d6d623124742baa329d45aab2dad5c4785b5d6f559b05",
+        "versionCode": 2074
       },
       "universal": {
         "abi": "universal",
-        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.10-73/moka-android.apk",
+        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.4.11-74/moka-android.apk",
         "fileName": "moka-android.apk",
-        "sha256": "97635954de9a40fb9a4ca7859923f1cfd1fdc74628c4f65f28042f93df9d81e6",
-        "versionCode": 73
+        "sha256": "00094c6cf0b7fe524dd189906d1bb379af16086f51c137d473f122dd20d3931f",
+        "versionCode": 74
       }
     }
   }
