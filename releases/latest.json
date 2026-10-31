@@ -1,35 +1,33 @@
 {
   "version": "0.5.1",
-  "buildNumber": 80,
-  "releasedAt": "2026-10-30",
+  "buildNumber": 81,
+  "releasedAt": "2026-10-31",
   "releaseNotes": [
-    "修复拾页长书名的显示，保持单行省略和右侧对齐。",
-    "优化宽窗口下的导航、内容布局和文字阅读体验。",
-    "改善书籍与书摘详情切换，减少往返操作。",
-    "优化宽窗口分享编辑器，预览与编辑面板并排展示。"
+    "更新应用图标，优化墨色 M、书页与书签的比例，轮廓更清晰。",
+    "同步应用内品牌图标，保持整体视觉一致。"
   ],
   "downloadPageUrl": "https://barks-sun.github.io/moka-site/download.html#android",
   "android": {
     "packageId": "com.efonly.moka",
-    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.5.1-80/moka-android-arm64-v8a.apk",
+    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.5.1-81/moka-android-arm64-v8a.apk",
     "fileName": "moka-android-arm64-v8a.apk",
-    "sha256": "200532a01a994505e21519694964a527947fc6cf8e6627b086c8f2371ad78b50",
-    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.5.1-80/SHA256SUMS.txt",
+    "sha256": "0218162b02929c5cab09031bba90a54c4a0717dc0e1e8fe1de2d59a9b37f6c61",
+    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.5.1-81/SHA256SUMS.txt",
     "downloadPageUrl": "https://barks-sun.github.io/moka-site/download.html#android",
     "packages": {
       "arm64-v8a": {
         "abi": "arm64-v8a",
-        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.5.1-80/moka-android-arm64-v8a.apk",
+        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.5.1-81/moka-android-arm64-v8a.apk",
         "fileName": "moka-android-arm64-v8a.apk",
-        "sha256": "200532a01a994505e21519694964a527947fc6cf8e6627b086c8f2371ad78b50",
-        "versionCode": 2080
+        "sha256": "0218162b02929c5cab09031bba90a54c4a0717dc0e1e8fe1de2d59a9b37f6c61",
+        "versionCode": 2081
       },
       "universal": {
         "abi": "universal",
-        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.5.1-80/moka-android.apk",
+        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.5.1-81/moka-android.apk",
         "fileName": "moka-android.apk",
-        "sha256": "8e09c214809edb60cf9c037f494781a35e3460e34fef9a1e9e1f2699a15191c1",
-        "versionCode": 80
+        "sha256": "aae06f0a3999df2ef0514a7aee829107121500b3b10ff5d8aa475c4e5b9fd2f5",
+        "versionCode": 81
       }
     }
   }
