@@ -1,0 +1,33 @@
+# 墨卡 Moka
+
+> 墨卡是一款面向个人阅读者的阅读笔记与书摘整理工具，帮助你同步、分类、搜索和回看书摘，并持续记录自己的想法。
+
+墨卡由 efonly 独立开发，不代表微信读书或腾讯官方。不连接微信读书也可以手动创建书摘和心迹，使用整理、搜索和标签功能。
+
+主要功能包括：
+
+- 按同步清单导入选定书籍的微信读书划线、想法和书评。
+- 按书籍、章节、分类、标签和关键词整理与查找记录。
+- 在书摘详情中添加多条“回响”，保留后来产生的新想法。
+- 通过“拾页”按日期重读旧书摘，通过阅读足迹回看阅读节奏。
+- 将书摘排版为分享卡片；配置外部服务后，可主动使用智能整理并预览生成结果。
+
+核心书摘和资料库默认保存在本机，基础整理功能不会自动把内容上传到墨卡运营方服务器。文件备份可用于迁移和恢复；Apple 设备可选择备份到个人 iCloud。微信读书连接和智能整理涉及对应第三方服务，具体数据处理范围以隐私政策为准。
+
+iPhone 版通过可用地区的 App Store 安装和更新，需要 iOS 15 或更高版本。中国大陆区目前暂时下架；其他地区的可用性以对应 App Store 页面为准。Android 版通过官网下载页和 GitHub Releases 提供官方 APK。Apple silicon Mac 是否可安装，以 App Store 页面为准。各平台发布进度可能不同：Android 当前版本与校验值见发布元数据，iOS 当前版本见 App Store。
+
+## 产品与使用
+
+- [官网首页](https://barks-sun.github.io/moka-site/): 产品定位、功能介绍与界面预览。
+- [支持与反馈](https://barks-sun.github.io/moka-site/support.html): 常见问题、反馈方式，以及微信读书连接、数据保存和备份说明。
+- [隐私政策](https://barks-sun.github.io/moka-site/privacy.html): 本机数据、权限、第三方服务、API Key、备份与删除规则。
+
+## 下载与更新
+
+- [官方下载页](https://barks-sun.github.io/moka-site/download.html): iPhone 与 Android 下载入口、设备兼容说明和 APK 校验方式。
+- [App Store（美国区）](https://apps.apple.com/us/app/%E5%A2%A8%E5%8D%A1-moka/id6775122875): 当前可访问的 iPhone 版官方商店页面、可用版本与系统要求；下载受 Apple 账号所在地区的可用性限制。
+- [Android 最新发布信息](https://barks-sun.github.io/moka-site/releases/latest.json): 机器可读的版本号、构建号、发布日期、更新说明、APK 下载链接和 SHA-256 校验值，仅描述 Android 发布。
+
+## Optional
+
+- [GitHub Releases](https://github.com/barks-sun/moka-site/releases): Android 历史版本、公开更新说明、安装包和校验文件。

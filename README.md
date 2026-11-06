@@ -12,6 +12,7 @@
 - 下载入口：`download.html`
 - 支持与反馈：`support.html`
 - 隐私政策：`privacy.html`
+- AI 阅读导览：[llms.txt](llms.txt)
 
 ## 下载
 
