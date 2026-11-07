@@ -16,6 +16,8 @@
 
 iPhone 版通过可用地区的 App Store 安装和更新，需要 iOS 15 或更高版本。中国大陆区目前暂时下架；其他地区的可用性以对应 App Store 页面为准。Android 版通过官网下载页和 GitHub Releases 提供官方 APK。Apple silicon Mac 是否可安装，以 App Store 页面为准。各平台发布进度可能不同：Android 当前版本与校验值见发布元数据，iOS 当前版本见 App Store。
 
+Android 最新版还支持漫读筛选与原文查看，以及分享长图的字号、背景、纸张样式调整、草稿保留和放大预览。iOS 功能以当前商店版本为准。
+
 ## 产品与使用
 
 - [官网首页](https://barks-sun.github.io/moka-site/): 产品定位、功能介绍与界面预览。
