@@ -9,22 +9,22 @@
   "downloadPageUrl": "https://moka.efonly.cc/download.html#android",
   "android": {
     "packageId": "com.efonly.moka",
-    "apkUrl": "https://moka.efonly.cc/downloads/android-v0.7.3-89/moka-android-arm64-v8a.apk",
+    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.3-89/moka-android-arm64-v8a.apk",
     "fileName": "moka-android-arm64-v8a.apk",
     "sha256": "2d9bfb66838bf38f9e02cd30cca38d192d1d3e06e028f082f8944de54d6efe3e",
-    "checksumUrl": "https://moka.efonly.cc/downloads/android-v0.7.3-89/SHA256SUMS.txt",
+    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.3-89/SHA256SUMS.txt",
     "downloadPageUrl": "https://moka.efonly.cc/download.html#android",
     "packages": {
       "arm64-v8a": {
         "abi": "arm64-v8a",
-        "apkUrl": "https://moka.efonly.cc/downloads/android-v0.7.3-89/moka-android-arm64-v8a.apk",
+        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.3-89/moka-android-arm64-v8a.apk",
         "fileName": "moka-android-arm64-v8a.apk",
         "sha256": "2d9bfb66838bf38f9e02cd30cca38d192d1d3e06e028f082f8944de54d6efe3e",
         "versionCode": 2089
       },
       "universal": {
         "abi": "universal",
-        "apkUrl": "https://moka.efonly.cc/downloads/android-v0.7.3-89/moka-android.apk",
+        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.3-89/moka-android.apk",
         "fileName": "moka-android.apk",
         "sha256": "9cff273b4856b465d32fae99e5f07d5d6ab8e201f5b9230df2704781622f1909",
         "versionCode": 89

@@ -1,9 +1,7 @@
-@import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkai-regular.css");
-@import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkai-bold.css");
 
 :root {
   color-scheme: light;
-  --paper: #f6f5f2;
+  --paper: #f5f7fa;
   --page: #fffefa;
   --page-muted: #eceae5;
   --ink: #1a2f3c;
@@ -11,7 +9,7 @@
   --ink-faint: #8a9297;
   --night: #172e3b;
   --night-soft: #244454;
-  --coral: #c7614e;
+  --coral: #ad7056;
   --coral-soft: #f4dfd8;
   --leaf: #71875b;
   --leaf-soft: #e7ecdf;
@@ -28,7 +26,7 @@
   --flow-node-center: 7px;
   --flow-node-offset: 14px;
   --flow-node-axis: calc(var(--flow-node-offset) + var(--flow-node-center));
-  --font-display: "LXGW WenKai", "霞鹜文楷", "STKaiti", "KaiTi", serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
   --font-body: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
@@ -105,8 +103,6 @@ h3 {
 }
 
 .site-header {
-  position: sticky;
-  top: 0;
   z-index: 20;
   display: flex;
   align-items: center;
@@ -129,8 +125,11 @@ h3 {
 }
 
 .brand img {
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  flex: 0 0 44px;
   border-radius: 9px;
 }
 
@@ -144,21 +143,24 @@ h3 {
 
 .nav a {
   padding: 8px 11px;
-  border-bottom: 1px solid transparent;
+  border-radius: 10px;
 }
 
 .nav a:hover,
 .nav a[aria-current="page"] {
   color: var(--ink);
-  border-bottom-color: var(--coral);
+  background: rgba(173,112,86,.10);
 }
 
 .nav .nav-icon-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  flex: 0 0 44px;
   padding: 0;
   border: 1px solid var(--rule);
   border-radius: 50%;
@@ -186,22 +188,13 @@ h3 {
   align-items: center;
   min-height: 760px;
   padding: clamp(68px, 8vw, 118px) clamp(20px, 6vw, 100px) 96px;
-  background-color: var(--page);
-  background-image: linear-gradient(rgba(26, 47, 60, 0.035) 1px, transparent 1px);
+  background-color: transparent;
+
   background-size: 100% 42px;
   border-bottom: 1px solid var(--rule);
 }
 
-.hero-home::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: clamp(20px, 3.3vw, 54px);
-  width: 2px;
-  background: var(--coral);
-  opacity: 0.58;
-}
+.hero-home::before {display:none}
 
 .hero-inner {
   position: relative;
@@ -256,7 +249,7 @@ h3 {
   min-height: 46px;
   padding: 11px 19px;
   border: 1px solid var(--ink);
-  border-radius: 4px;
+  border-radius: 24px;
   font-weight: 700;
   line-height: 1.2;
   transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
@@ -269,12 +262,12 @@ h3 {
 .button.primary {
   color: #fff;
   background: var(--ink);
-  box-shadow: 5px 5px 0 var(--coral-soft);
+  box-shadow: var(--shadow);
 }
 
 .button.primary:hover {
   background: var(--night-soft);
-  box-shadow: 7px 7px 0 var(--coral-soft);
+  box-shadow: var(--shadow);
 }
 
 .button.secondary {
@@ -846,7 +839,7 @@ h3 {
 }
 
 .memory-copy p:not(.eyebrow) {
-  color: #bac8cf;
+  color: var(--ink-soft);
   font-size: 17px;
 }
 
@@ -1011,45 +1004,12 @@ h3 {
   border-color: rgba(255, 255, 255, 0.74);
 }
 
-.site-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 14px 24px;
-  padding: 38px 20px 46px;
-  color: var(--ink-soft);
-  border-top: 1px solid var(--rule);
-}
 
-.site-footer a:hover {
-  color: var(--coral);
-}
 
 /* Document, support and download pages */
-.document {
-  width: min(var(--layout-document), calc(100% - (var(--page-gutter) * 2)));
-  margin: 0 auto;
-  padding: 64px 0 84px;
-}
 
-.doc-body {
-  padding: clamp(28px, 6vw, 68px);
-  background: var(--page);
-  border: 1px solid var(--rule);
-  box-shadow: 8px 8px 0 var(--page-muted);
-}
 
-.doc-body h1 {
-  margin-bottom: 10px;
-  font-size: clamp(46px, 8vw, 82px);
-  line-height: 1.05;
-  letter-spacing: -0.04em;
-}
 
-.doc-body h2 {
-  margin-top: 42px;
-  font-size: clamp(27px, 3vw, 36px);
-}
 
 .doc-body p,
 .doc-body li,
@@ -1063,7 +1023,7 @@ h3 {
 
 .doc-body a:not(.button):not(.apk-link) {
   color: var(--coral);
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 3px;
 }
 
@@ -1082,7 +1042,8 @@ h3 {
   margin: 30px 0 38px;
   padding: 24px;
   background: var(--mist);
-  border-left: 4px solid var(--night-soft);
+  border: 1px solid #dce4e8;
+  border-radius: 20px;
 }
 
 .label {
@@ -1123,7 +1084,7 @@ details p {
   flex-direction: column;
   padding: 24px;
   background: var(--paper);
-  border-top: 4px solid var(--rule);
+  border: 1px solid #dce4e8;
 }
 
 .download-card h2 {
@@ -1175,7 +1136,8 @@ details p {
   gap: 18px;
   padding: 17px 19px;
   background: var(--paper);
-  border-left: 3px solid var(--rule);
+  border: 1px solid #dce4e8;
+  border-radius: 16px;
 }
 
 .apk-link:hover {
@@ -1310,8 +1272,8 @@ details p {
   }
 
   .nav .nav-icon-link {
-    width: 34px;
-    height: 34px;
+    width: 44px;
+    height: 44px;
   }
 
   .hero-home {
@@ -1319,9 +1281,7 @@ details p {
     padding: 58px 20px 66px 34px;
   }
 
-  .hero-home::before {
-    left: 16px;
-  }
+  .hero-home::before {display:none}
 
   .hero h1 {
     font-size: clamp(32px, 9.8vw, 48px);
@@ -1422,7 +1382,7 @@ details p {
 
   .doc-body {
     padding: 26px 20px;
-    box-shadow: 5px 5px 0 var(--page-muted);
+    box-shadow: var(--glass-shadow);
   }
 
   .contact-panel,
@@ -1461,3 +1421,10 @@ details p {
 @media (max-width: 480px) {
   .feature-screenshots { grid-template-columns: minmax(0, 1fr); max-width: 360px; margin-inline: auto; }
 }
+
+:root{--brand-accent:#ad7056;--ink:#202936;--ink-soft:#586578;--paper:#f5f7fa;--page:#ffffff;--shadow:0 24px 64px -28px #273c6140}.hero-home{min-height:660px;max-width:1280px;margin:auto;border:0;gap:60px;padding-top:80px}.hero h1{font-weight:600;letter-spacing:-1.5px}.hero-artifact{border:1px solid white;border-radius:32px;background:linear-gradient(140deg,#ffffffcc,#eee0d366);box-shadow:var(--glass-shadow);backdrop-filter:blur(20px);padding:30px}.artifact-bookmark{display:none}.excerpt-sheet{border-radius:20px;border-color:#e7e2db;box-shadow:0 16px 38px -24px #68544550}.excerpt-sheet blockquote{font-family:"STKaiti","KaiTi",serif}.organizer-demo,.scope-demo,.timeline-demo,.doc-body,.download-card{border-radius:24px}.memory-section{background:#e7eeef;color:var(--ink)}.memory-section::after{display:none}.memory-copy p{color:var(--ink-soft)}.button.primary{background:var(--ink);box-shadow:var(--shadow)}.nav a{font-size:14px}.hero-subcopy{font-size:18px}.artifact-caption{font-size:12px}@media(max-width:900px){.hero-home{gap:32px;grid-template-columns:1fr;min-height:0;padding:50px 24px}.hero-artifact{justify-self:center}.hero h1{font-size:40px}.hero-artifact{padding:20px}}
+
+.trust-section,.download-cta{border-radius:24px;box-shadow:none}.download-cta{background:#e8ddd4;color:var(--ink)}.download-cta p{color:var(--ink-soft)}
+
+/* Text-only chapters keep a compact reading width without an empty image column. */
+.story-text{display:block;padding:48px 0}.story-text .story-copy{max-width:760px}.story-text h2 br{display:none}@media(max-width:760px){.story-text{padding:36px 0}}
