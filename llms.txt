@@ -22,16 +22,18 @@ Android 最新版还支持漫读筛选与原文查看、拾页与漫读卡片长
 
 ## 产品与使用
 
-- [官网首页](https://barks-sun.github.io/moka-site/): 产品定位、功能介绍与界面预览。
-- [支持与反馈](https://barks-sun.github.io/moka-site/support.html): 常见问题、反馈方式，以及微信读书连接、数据保存和备份说明。
-- [隐私政策](https://barks-sun.github.io/moka-site/privacy.html): 本机数据、权限、第三方服务、API Key、备份与删除规则。
+- [官网首页](https://moka.efonly.cc/): 产品定位、功能介绍与界面预览。
+- [支持与反馈](https://moka.efonly.cc/support.html): 常见问题、反馈方式，以及微信读书连接、数据保存和备份说明。
+- [隐私政策](https://moka.efonly.cc/privacy.html): 本机数据、权限、第三方服务、API Key、备份与删除规则。
 
 ## 下载与更新
 
-- [官方下载页](https://barks-sun.github.io/moka-site/download.html): iPhone 与 Android 下载入口、设备兼容说明和 APK 校验方式。
+- [官方下载页](https://moka.efonly.cc/download.html): iPhone 与 Android 下载入口、设备兼容说明和 APK 校验方式。
 - [App Store（美国区）](https://apps.apple.com/us/app/%E5%A2%A8%E5%8D%A1-moka/id6775122875): 当前可访问的 iPhone 版官方商店页面、可用版本与系统要求；下载受 Apple 账号所在地区的可用性限制。
-- [Android 最新发布信息](https://barks-sun.github.io/moka-site/releases/latest.json): 机器可读的版本号、构建号、发布日期、更新说明、APK 下载链接和 SHA-256 校验值，仅描述 Android 发布。
+- [Android 最新发布信息](https://moka.efonly.cc/releases/latest.json): 机器可读的版本号、构建号、发布日期、更新说明、APK 下载链接和 SHA-256 校验值，仅描述 Android 发布。
 
 ## Optional
 
 - [GitHub Releases](https://github.com/barks-sun/moka-site/releases): Android 历史版本、公开更新说明、安装包和校验文件。
+
+- [备用官网](https://barks-sun.github.io/moka-site/): 保留原有访问与下载入口。
