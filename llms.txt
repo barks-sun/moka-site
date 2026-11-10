@@ -37,3 +37,5 @@ Android 最新版还支持漫读筛选与原文查看、拾页与漫读卡片长
 - [GitHub Releases](https://github.com/barks-sun/moka-site/releases): Android 历史版本、公开更新说明、安装包和校验文件。
 
 - [备用官网](https://barks-sun.github.io/moka-site/): 保留原有访问与下载入口。
+
+Android 更新检测与当前版 APK 下载由官网提供，GitHub Releases 保留备用下载及历史版本。官网服务器仅保留当前版本。

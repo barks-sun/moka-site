@@ -1,36 +1,33 @@
 {
   "version": "0.7.3",
-  "buildNumber": 88,
-  "releasedAt": "2026-11-09",
+  "buildNumber": 89,
+  "releasedAt": "2026-11-10",
   "releaseNotes": [
-    "分享配图支持头像、书籍封面和不显示，自定义书籍使用统一封面样式。",
-    "调小长图默认字号，保留手动调整的字体与排版。",
-    "拾页与漫读卡片统一支持长按分享，点击那年今日正文可直接查看书摘详情。",
-    "从拾页进入漫读时延续当前书籍，减少页面上的重复操作按钮。",
-    "优化微信读书重复导入处理，保留已有回响并改善记录时间显示。"
+    "Android 更新检测与安装包下载迁移至墨卡官网，保留 GitHub 备用下载。",
+    "更新应用内官网与下载入口。"
   ],
   "downloadPageUrl": "https://moka.efonly.cc/download.html#android",
   "android": {
     "packageId": "com.efonly.moka",
-    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.3-88/moka-android-arm64-v8a.apk",
+    "apkUrl": "https://moka.efonly.cc/downloads/android-v0.7.3-89/moka-android-arm64-v8a.apk",
     "fileName": "moka-android-arm64-v8a.apk",
-    "sha256": "f61ea205d3833ceaac93fdaed516233de95f35ab7d0eefb23d60d6423a3dae9b",
-    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.3-88/SHA256SUMS.txt",
+    "sha256": "2d9bfb66838bf38f9e02cd30cca38d192d1d3e06e028f082f8944de54d6efe3e",
+    "checksumUrl": "https://moka.efonly.cc/downloads/android-v0.7.3-89/SHA256SUMS.txt",
     "downloadPageUrl": "https://moka.efonly.cc/download.html#android",
     "packages": {
       "arm64-v8a": {
         "abi": "arm64-v8a",
-        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.3-88/moka-android-arm64-v8a.apk",
+        "apkUrl": "https://moka.efonly.cc/downloads/android-v0.7.3-89/moka-android-arm64-v8a.apk",
         "fileName": "moka-android-arm64-v8a.apk",
-        "sha256": "f61ea205d3833ceaac93fdaed516233de95f35ab7d0eefb23d60d6423a3dae9b",
-        "versionCode": 2088
+        "sha256": "2d9bfb66838bf38f9e02cd30cca38d192d1d3e06e028f082f8944de54d6efe3e",
+        "versionCode": 2089
       },
       "universal": {
         "abi": "universal",
-        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.3-88/moka-android.apk",
+        "apkUrl": "https://moka.efonly.cc/downloads/android-v0.7.3-89/moka-android.apk",
         "fileName": "moka-android.apk",
-        "sha256": "f22752158cf7a76ed20ea3a93ee1d5626efad9d57c5f9bc1773eb70241e6a452",
-        "versionCode": 88
+        "sha256": "9cff273b4856b465d32fae99e5f07d5d6ab8e201f5b9230df2704781622f1909",
+        "versionCode": 89
       }
     }
   }
