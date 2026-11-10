@@ -4,7 +4,7 @@
 
 它可以帮助你同步和整理阅读书架、书摘、心迹、想法和阅读记录；当你愿意保存或分享时，也可以把喜欢的片段生成干净的书摘卡片。
 
-官网：https://barks-sun.github.io/moka-site/
+官网：https://moka.efonly.cc/
 
 ## 页面
 
@@ -25,3 +25,5 @@ Android 官方安装包通过本站和 GitHub Releases 发布，并提供版本�
 ## 支持
 
 如需反馈问题或建议，请查看官网的支持与反馈页面。
+
+备用官网：https://barks-sun.github.io/moka-site/
