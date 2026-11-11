@@ -26,3 +26,122 @@ footer a:hover,.story-link:hover{color:var(--body-ink)}#support{scroll-margin-to
 .product-site .doc-body h2{margin-top:42px;font-size:clamp(23px,3vw,28px);font-weight:600;line-height:1.4}
 .product-site .doc-body p,.product-site .doc-body li{color:var(--body-muted)}
 @media(max-width:700px){.product-site>.site-header{flex-direction:row;align-items:center}.product-site>.site-header .nav{width:100%;gap:2px;justify-content:flex-start}.product-site .document{padding:32px 0 48px}.product-site .doc-body{padding:26px 20px}.product-site .site-footer{gap:12px 20px;font-size:13px}.product-site .nav .back-home{margin-left:auto}.product-site .nav .nav-icon-link{margin-left:auto}.product-site .nav:has(.nav-icon-link) .back-home{margin-left:0}}
+
+/* System appearance is shared across all independently deployed sites. */
+:root { color-scheme: light; }
+:root[data-appearance="dark"] { color-scheme: dark; }
+
+html:root[data-appearance="dark"] {
+    --glass: #202b3bd9;
+    --glass-edge: #ffffff1f;
+    --glass-shadow: 0 24px 64px -28px #00000070, inset 0 1px 0 #ffffff08;
+    --body-ink: #e6ebf2;
+    --body-muted: #b1bdcc;
+    --brand-accent: var(--product-dark-accent, #acb9ed);
+    --ink: var(--body-ink);
+    --ink-soft: var(--body-muted);
+    --ink-faint: #a3afbf;
+    --muted: var(--body-muted);
+    --accent: #acb9ed;
+    --rule: #3c4858;
+    --paper: #17212e;
+    --page: #202b3b;
+    --page-muted: #2b3747;
+    --mist: #283645;
+    --night-soft: #c0d1e4;
+    --coral: #e4ac91;
+    --coral-soft: #3a3030;
+  }
+
+html:root[data-appearance="dark"] {
+    background: radial-gradient(ellipse at 12% 5%, #263049 0, transparent 42%),
+      radial-gradient(ellipse at 90% 20%, #1b3839 0, transparent 40%), #141c28;
+    background-attachment: fixed;
+  }
+
+:root[data-appearance="dark"] .product-site > .site-header { background: var(--glass); border-color: var(--glass-edge); }
+
+:root[data-appearance="dark"] .story-device,
+:root[data-appearance="dark"] .inbox-scene,
+:root[data-appearance="dark"] .record-example {
+    background: linear-gradient(140deg, #283546, #202e38);
+    border-color: var(--glass-edge);
+  }
+
+:root[data-appearance="dark"] .story-device img { border-color: var(--glass-edge); }
+
+:root[data-appearance="dark"] .story-row,
+:root[data-appearance="dark"] .story-facts,
+:root[data-appearance="dark"] .inbox-item,
+:root[data-appearance="dark"] .record-example details,
+:root[data-appearance="dark"] .product-site .site-footer { border-color: var(--rule); }
+
+:root[data-appearance="dark"] .story-end { border-color: var(--glass-edge); }
+
+:root[data-appearance="dark"] .product-site .doc-body { background: #202b3bf0; border-color: var(--glass-edge); }
+
+:root[data-appearance="dark"] .button,
+:root[data-appearance="dark"] .visit,
+:root[data-appearance="dark"] .button.primary { background: #dce5f1; color: #182332; border-color: transparent; }
+
+:root[data-appearance="dark"] .button:hover,
+:root[data-appearance="dark"] .visit:hover,
+:root[data-appearance="dark"] .button.primary:hover { background: var(--brand-accent); color: #182332; }
+
+:root[data-appearance="dark"] .button.secondary { background: var(--glass); color: var(--body-ink); border-color: #566477; }
+
+:root[data-appearance="dark"] .button.disabled { background: #2b3747; color: #a3afbf; }
+
+:root[data-appearance="dark"] .product-site .nav a:hover,
+:root[data-appearance="dark"] .product-site .nav a[aria-current="page"] { background: #ffffff0d; color: var(--body-ink); }
+
+:root[data-appearance="dark"] .download,
+:root[data-appearance="dark"] .download-card,
+:root[data-appearance="dark"] .contact-panel,
+:root[data-appearance="dark"] .apk-link { background: var(--paper); border-color: var(--rule); }
+
+:root[data-appearance="dark"] .download-card.accent { border-top-color: var(--coral); }
+
+:root[data-appearance="dark"] .primary-apk { background: var(--coral-soft); border-left-color: var(--coral); }
+
+:root[data-appearance="dark"] .download code,
+:root[data-appearance="dark"] .doc-body code { background: #141e2b; color: #c0d1e4; }
+
+:root[data-appearance="dark"] .skip:focus { background: var(--page); color: var(--body-ink); }
+
+:root[data-appearance="dark"] .app { background: linear-gradient(135deg, #283446d9, #202c3c99); border-color: var(--glass-edge); box-shadow: var(--glass-shadow); }
+
+:root[data-appearance="dark"] .app-stage { background: radial-gradient(ellipse at center, #9c77642e, transparent 70%); }
+
+:root[data-appearance="dark"] .app-glint .app-stage { background: radial-gradient(ellipse at center, #65a89926, transparent 70%); }
+
+:root[data-appearance="dark"] .icon-platform,
+:root[data-appearance="dark"] .app:not(.app-glint) .icon-platform,
+:root[data-appearance="dark"] .app-glint .icon-platform {
+    background: #354253; border-color: #ffffff26; box-shadow: 0 22px 36px -22px #00000080, inset 0 1px 0 #ffffff08;
+  }
+
+:root[data-appearance="dark"] .stage-label { color: #c1b8df; }
+
+:root[data-appearance="dark"] .app-glint .stage-label { color: #a7cfc6; }
+
+@media (prefers-reduced-transparency: reduce) {
+  :root[data-appearance="dark"] body>header, :root[data-appearance="dark"] .shell>.header, :root[data-appearance="dark"] .glass-surface { background: #202b3b; }
+}
+@media (max-width: 700px) {
+  html:root[data-appearance="dark"] { background-attachment: scroll; }
+}
+
+/* The same appearance control sits at the trailing edge of every site header. */
+.theme-control { display:grid; place-items:center; position:relative; flex:0 0 44px; width:44px; height:44px; margin:0; padding:0; border:0; border-radius:50%; background:transparent; color:var(--body-muted); cursor:pointer; }
+.theme-control:hover { background:var(--glass); color:var(--body-ink); }
+.theme-control:focus-visible { outline:3px solid var(--brand-accent); outline-offset:3px; }
+.theme-control svg { width:21px; height:21px; fill:none; stroke:currentColor; stroke-width:1.6; }
+.theme-control svg path { fill:currentColor; stroke:none; }
+body>header nav, .shell>.header nav { margin-left:auto; }
+@media(max-width:700px) {
+  body>.site-header .theme-control { position:absolute; top:12px; right:18px; }
+  body>.site-header .brand { padding-right:50px; }
+  .shell>.header { gap:8px; }
+  .shell>.header .home-nav { gap:12px; }
+}

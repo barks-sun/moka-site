@@ -1428,3 +1428,7 @@ details p {
 
 /* Text-only chapters keep a compact reading width without an empty image column. */
 .story-text{display:block;padding:48px 0}.story-text .story-copy{max-width:760px}.story-text h2 br{display:none}@media(max-width:760px){.story-text{padding:36px 0}}
+
+:root { --product-dark-accent: #e4ac91; }
+
+@font-face{font-family:MokaPreview;src:url("preview-font.woff?v=817d3ed078a4") format("woff");font-weight:400;font-display:swap}.preview-moka .preview-screen{font-family:MokaPreview,"PingFang SC",sans-serif}
