@@ -1,28 +1,28 @@
 {
-  "version": "0.7.4",
-  "buildNumber": 90,
-  "releasedAt": "2026-11-11",
+  "version": "0.7.5",
+  "buildNumber": 91,
+  "releasedAt": "2026-11-12",
   "releaseNotes": [
-    "搜索支持查找想法和回响正文，按书列表与单本书内均可使用。",
-    "搜索结果展示首条匹配想法与首条匹配回响的关键词附近内容，长文本保持单行摘要。",
-    "优化书摘卡片、排序图标与搜索入口，想法和回响更容易区分。",
-    "将常用悬浮操作整合为竖向胶囊，减少列表遮挡。"
+    "检测到新版时展示更新内容，可立即更新、7 天后提醒或跳过此版本；随时可手动检查更新。",
+    "书摘页面的悬浮按钮支持整组拖动，松手自动吸附左侧或右侧边缘。",
+    "自动记住本机按钮位置，书摘列表与书内页面保持一致。",
+    "设置中可恢复默认位置，原有按钮点击操作保持不变。"
   ],
   "downloadPageUrl": "https://moka.efonly.cc/download.html#android",
   "android": {
     "packageId": "com.efonly.moka",
-    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.4-90/moka-android-arm64-v8a.apk",
+    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.5-91/moka-android-arm64-v8a.apk",
     "fileName": "moka-android-arm64-v8a.apk",
-    "sha256": "c5e3bc8ff270f9292c1245a50d33c9ab5edb8b420c427d2fbeddcb4e0c1cc78b",
-    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.4-90/SHA256SUMS.txt",
+    "sha256": "4625a0901b9a1b44ba373538bac9583f76afb7361b4b1c64ad1c2dde595535ae",
+    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.5-91/SHA256SUMS.txt",
     "downloadPageUrl": "https://moka.efonly.cc/download.html#android",
     "packages": {
       "arm64-v8a": {
         "abi": "arm64-v8a",
-        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.4-90/moka-android-arm64-v8a.apk",
+        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.5-91/moka-android-arm64-v8a.apk",
         "fileName": "moka-android-arm64-v8a.apk",
-        "sha256": "c5e3bc8ff270f9292c1245a50d33c9ab5edb8b420c427d2fbeddcb4e0c1cc78b",
-        "versionCode": 2090
+        "sha256": "4625a0901b9a1b44ba373538bac9583f76afb7361b4b1c64ad1c2dde595535ae",
+        "versionCode": 2091
       }
     }
   }
