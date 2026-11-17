@@ -1,26 +1,26 @@
 {
-  "version": "0.7.7",
-  "buildNumber": 93,
+  "version": "0.7.8",
+  "buildNumber": 94,
   "releasedAt": "2026-11-17",
   "releaseNotes": [
-    "设置的关于与支持中新增备案号展示。",
-    "修复拾页首页返回后卡片位置恢复与书摘总数显示问题。"
+    "改善微信读书同步体验，支持查看接口版本。",
+    "优化更新检查与设置页面。"
   ],
   "downloadPageUrl": "https://moka.efonly.cc/download.html#android",
   "android": {
     "packageId": "com.efonly.moka",
-    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.7-93/moka-android-arm64-v8a.apk",
+    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.8-94/moka-android-arm64-v8a.apk",
     "fileName": "moka-android-arm64-v8a.apk",
-    "sha256": "1474501dd01616270ebaa5b1f5313adafc8367f69a5da99fc0d3972d889e45af",
-    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.7-93/SHA256SUMS.txt",
+    "sha256": "a48f592d7742ad22746a438622a7bd5288ed05b7572e3628740c1291ba640189",
+    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.8-94/SHA256SUMS.txt",
     "downloadPageUrl": "https://moka.efonly.cc/download.html#android",
     "packages": {
       "arm64-v8a": {
         "abi": "arm64-v8a",
-        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.7-93/moka-android-arm64-v8a.apk",
+        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.8-94/moka-android-arm64-v8a.apk",
         "fileName": "moka-android-arm64-v8a.apk",
-        "sha256": "1474501dd01616270ebaa5b1f5313adafc8367f69a5da99fc0d3972d889e45af",
-        "versionCode": 2093
+        "sha256": "a48f592d7742ad22746a438622a7bd5288ed05b7572e3628740c1291ba640189",
+        "versionCode": 2094
       }
     }
   }
