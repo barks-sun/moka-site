@@ -1,29 +1,26 @@
 {
-  "version": "0.7.6",
-  "buildNumber": 92,
-  "releasedAt": "2026-11-13",
+  "version": "0.7.7",
+  "buildNumber": 93,
+  "releasedAt": "2026-11-17",
   "releaseNotes": [
-    "应用内更新可查看下载进度，支持取消下载和重新尝试。",
-    "开启安装权限后回到墨卡可继续安装；取消系统安装后可再次打开安装确认。",
-    "已下载的更新包经校验后可重复使用，减少重复下载。",
-    "完善更新包校验与下载失败提示，更新过程更清晰。",
-    "修复书摘悬浮按钮在页面切换时位置偏移的问题。"
+    "设置的关于与支持中新增备案号展示。",
+    "修复拾页首页返回后卡片位置恢复与书摘总数显示问题。"
   ],
   "downloadPageUrl": "https://moka.efonly.cc/download.html#android",
   "android": {
     "packageId": "com.efonly.moka",
-    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.6-92/moka-android-arm64-v8a.apk",
+    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.7-93/moka-android-arm64-v8a.apk",
     "fileName": "moka-android-arm64-v8a.apk",
-    "sha256": "7d8c8134ab62e10b35f74565491827bcb3b96097aa241c9fea48f3ecefb01fca",
-    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.6-92/SHA256SUMS.txt",
+    "sha256": "1474501dd01616270ebaa5b1f5313adafc8367f69a5da99fc0d3972d889e45af",
+    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.7-93/SHA256SUMS.txt",
     "downloadPageUrl": "https://moka.efonly.cc/download.html#android",
     "packages": {
       "arm64-v8a": {
         "abi": "arm64-v8a",
-        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.6-92/moka-android-arm64-v8a.apk",
+        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.7-93/moka-android-arm64-v8a.apk",
         "fileName": "moka-android-arm64-v8a.apk",
-        "sha256": "7d8c8134ab62e10b35f74565491827bcb3b96097aa241c9fea48f3ecefb01fca",
-        "versionCode": 2092
+        "sha256": "1474501dd01616270ebaa5b1f5313adafc8367f69a5da99fc0d3972d889e45af",
+        "versionCode": 2093
       }
     }
   }
