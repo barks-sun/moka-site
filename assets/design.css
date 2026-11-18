@@ -163,3 +163,86 @@ body>header nav, .shell>.header nav { margin-left:auto; }
  .product-site .site-registration { grid-column:1 / -1; grid-row:2; }
  .shell > .footer .site-registration { justify-self:end; }
 }
+
+/* 产品下载与帮助：先呈现操作，再按需展开细节。 */
+.product-site .page-intro { margin:0 0 36px; }
+.product-site .page-intro p { max-width:42em; font-size:17px; line-height:1.8; }
+.product-site .page-intro .eyebrow { font-size:12px; color:var(--brand-accent); margin:0 0 14px; }
+.product-site .download-page { width:min(1120px,calc(100% - clamp(28px,6vw,80px))); }
+.product-site .download-page .doc-body { padding:clamp(24px,4vw,48px); }
+.install-options { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+.product-site .install-option { padding:28px; border:1px solid #d9dfe5; border-radius:20px; background:var(--glass); min-width:0; scroll-margin-top:150px; }
+.product-site .install-option .eyebrow { font-size:13px; color:var(--brand-accent); margin:0 0 14px; }
+.product-site .install-option h2 { font-size:25px; margin:0 0 14px; letter-spacing:-.02em; }
+.product-site .install-option p { line-height:1.75; margin:12px 0; }
+.product-site .install-option .button { margin:12px 0 4px; }
+.product-site .install-caption,.product-site .platform-note { font-size:14px; color:var(--body-muted); }
+.text-link { display:inline-flex; align-items:center; min-height:44px; color:var(--brand-accent); font-size:14px; text-underline-offset:4px; }
+.install-single { display:grid; grid-template-columns:1fr 1fr; gap:12px 32px; align-items:center; }
+.install-actions { display:flex; flex-direction:column; align-items:flex-start; }
+.install-single .package-check,.install-single .download-status,.install-single noscript { grid-column:1/-1; }
+.install-single .package-check { margin-top:12px; }
+.product-site .download-status { margin:0; font-size:14px; }
+.download-status.is-ready { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+.product-site .platform-note { margin:20px 0 0; }
+.product-site .download-help { margin-top:36px; }
+.product-site .download-help h2 { font-size:23px; margin:0 0 12px; }
+.product-site .help-disclosure { border:0; border-top:1px solid #d9dfe5; padding:0; scroll-margin-top:150px; }
+.product-site .help-disclosure summary { cursor:pointer; padding:17px 0; min-height:44px; font-family:inherit; font-size:16px; font-weight:600; line-height:1.6; color:var(--body-ink); }
+.product-site .help-disclosure summary:focus-visible { outline:3px solid var(--brand-accent); outline-offset:3px; border-radius:4px; }
+.product-site .help-disclosure p { font-size:15px; line-height:1.85; margin:0 0 16px; max-width:48em; }
+.product-site .help-disclosure code { display:block; overflow-wrap:anywhere; white-space:normal; font-size:12px; line-height:1.8; padding:12px; background:var(--paper); border-radius:8px; color:var(--body-ink); }
+.package-facts { display:grid; grid-template-columns:88px minmax(0,1fr); gap:12px 16px; font-size:14px; margin:20px 0; }
+.package-facts dt { color:var(--body-muted); }
+.package-facts dd { margin:0; overflow-wrap:anywhere; }
+.help-topics { display:flex; gap:8px; flex-wrap:wrap; margin:24px 0 32px; }
+.help-topics a { padding:8px 16px; border:1px solid #d9dfe5; border-radius:999px; color:var(--body-ink); text-decoration:none; font-size:14px; }
+.help-topics a:hover { background:var(--glass); border-color:var(--brand-accent); }
+.product-site .help-page .doc-body { max-width:880px; margin:auto; }
+:root[data-appearance="dark"] .install-option { border-color:var(--rule); background:var(--paper); }
+:root[data-appearance="dark"] :is(.help-disclosure,.help-topics a) { border-color:var(--rule); }
+/* 首页保留完整首屏示意，后续按内容组织，避免空置半屏。 */
+.refined-story .story-hero { padding:54px 0 60px; gap:56px; }
+.refined-story .story-row { padding:48px 0; gap:48px; }
+.refined-story .story-copy h1 { text-wrap:balance; }
+.refined-story .story-copy p { line-height:1.8; }
+.refined-story .story-text { display:block; }
+.refined-story .story-text .story-copy { max-width:none; display:grid; grid-template-columns:1fr 1.15fr; column-gap:64px; align-items:start; }
+.refined-story .story-text .eyebrow { grid-column:1; margin:0; }
+.refined-story .story-text h2 { grid-column:1; grid-row:2/5; margin-top:12px; }
+.refined-story .story-text .story-copy > p:not(.eyebrow),.refined-story .story-text .story-link { grid-column:2; margin-top:0; }
+.refined-story .story-text .story-copy > p:nth-of-type(2) { grid-row:2; }
+.refined-story .story-text .story-copy > p:nth-of-type(3) { grid-row:3; }
+.refined-story .story-text .story-link { grid-row:4; }
+.refined-story .preview-detail .preview-screen { aspect-ratio:390/470; }
+.refined-story .preview-detail .product-preview { width:min(100%,390px); }
+.refined-story .preview-detail .rep-actions { display:none; }
+.refined-story .preview-detail figcaption { color:var(--body-muted); font-size:13px; text-align:center; margin-top:14px; }
+@media(max-width:760px) {
+ .install-options,.install-single { grid-template-columns:1fr; }
+ .product-site .download-page .doc-body { padding:28px 20px; }
+ .product-site .install-option { padding:22px; }
+ .product-site .page-intro { margin-bottom:26px; }
+ .product-site .install-option h2 { font-size:23px; }
+ .install-actions { gap:4px; }
+ .product-site .install-option .button { width:100%; }
+ .package-facts { grid-template-columns:1fr; gap:6px; }
+ .package-facts dd { margin-bottom:12px; }
+ .refined-story .story-hero,.refined-story .story-row { grid-template-columns:1fr; gap:28px; padding:36px 0; }
+ .refined-story .story-text .story-copy { display:block; }
+ .refined-story .story-text .story-copy > p:not(.eyebrow) { margin-top:14px; }
+ .refined-story .story-hero .product-preview { width:min(100%,280px); }
+ .refined-story .story-reverse .product-preview { width:min(100%,280px); }
+ .refined-story .story-facts { gap:16px; }
+}
+
+/* 显式隐藏下载控件，避免按钮布局覆盖原生 hidden 属性。 */
+.product-site .install-option [hidden] { display:none !important; }
+
+/* 手机导航将辅助图标放在品牌行，为中英文页面导航留出完整一行。 */
+@media(max-width:700px) {
+ .product-site > .site-header .brand { padding-right:0; max-width:calc(100% - 132px); }
+ .product-site .nav .nav-icon-link:not(.language-switch) { position:absolute; top:12px; right:106px; margin:0; }
+ .product-site .nav .back-home { position:absolute; top:12px; right:62px; margin:0; }
+ .product-site .nav .language-switch { margin-left:auto; }
+}

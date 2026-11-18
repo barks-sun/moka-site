@@ -16,7 +16,7 @@
 
 核心书摘和资料库默认保存在本机，基础整理功能不会自动把内容上传到墨卡运营方服务器。文件备份可用于迁移和恢复；Apple 设备可选择备份到个人 iCloud。微信读书连接和智能整理涉及对应第三方服务，具体数据处理范围以隐私政策为准。
 
-iPhone 版通过可用地区的 App Store 安装和更新，需要 iOS 15 或更高版本。中国大陆区已恢复上架；其他地区的可用性以对应 App Store 页面为准。Android 版通过官网下载页和 GitHub Releases 提供官方 APK。Apple silicon Mac 是否可安装，以 App Store 页面为准。各平台发布进度可能不同：Android 当前版本与校验值见发布元数据，iOS 当前版本见 App Store。
+iPhone 版通过可用地区的 App Store 安装和更新，需要 iOS 15 或更高版本。中国大陆区已恢复上架；其他地区的可用性以对应 App Store 页面为准。Android 版通过官网下载页和 GitHub Releases 提供 ARM64 官方 APK。各平台发布进度可能不同：Android 当前版本与校验值见发布元数据，iOS 当前版本见 App Store。
 
 iPhone 与 Android 均支持搜索书摘、想法和回响，按多级标签整理，通过漫读翻阅收藏，并调整分享卡片的字号、背景与纸张样式。
 

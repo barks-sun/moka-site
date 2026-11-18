@@ -21,3 +21,9 @@
 .rep-group-label{display:flex;align-items:center;gap:2cqw}.rep-group-label svg{width:3.5cqw;height:3.5cqw}
 .rep-book-info>div,.rep-chapter>span,.rep-echo-title>span{display:flex;align-items:center;gap:2cqw}
 .rep-book-info svg,.rep-chapter svg,.rep-echo-title svg{width:4cqw;height:4cqw}
+
+/* Glint 当前移动界面的状态导航与操作按钮，统一从共享来源同步。 */
+.rep-glint-body .rep-search-row{margin-bottom:5cqw}
+.rep-status-bar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1cqw;padding:2cqw 3cqw 4cqw;background:var(--preview-surface);border-top:1px solid var(--preview-line);color:var(--preview-muted);flex:none}
+.rep-status-bar>*{display:flex;flex-direction:column;align-items:center;padding:2cqw 0;border-radius:3cqw;font-size:3.7cqw}.rep-status-bar>b{background:var(--preview-control);color:var(--preview-accent)}.rep-status-bar small{font-size:3cqw;font-variant-numeric:tabular-nums}
+.rep-actions{position:absolute;right:5cqw;bottom:5cqw;display:flex;flex-direction:column;align-items:center;gap:4cqw;padding:4cqw;width:14cqw;border:1px solid var(--preview-line);border-radius:9cqw;background:var(--preview-surface);box-shadow:0 12px 25px #0001;color:var(--preview-ink)}.rep-actions span{width:100%;border-top:1px solid var(--preview-line)}.rep-actions svg:last-child{color:var(--preview-accent)}
