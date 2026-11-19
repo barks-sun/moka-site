@@ -1,26 +1,27 @@
 {
-  "version": "0.7.8",
-  "buildNumber": 94,
-  "releasedAt": "2026-11-17",
+  "version": "0.7.9",
+  "buildNumber": 95,
+  "releasedAt": "2026-11-19",
   "releaseNotes": [
-    "改善微信读书同步体验，支持查看接口版本。",
-    "优化更新检查与设置页面。"
+    "微信读书书架默认同步全部书籍，也可只同步自己选定的书。",
+    "笔记导入跟随同步范围，预览确认后再导入。",
+    "优化设置页布局，可在「关于与支持」回看内容分享与导出声明。"
   ],
   "downloadPageUrl": "https://moka.efonly.cc/download.html#android",
   "android": {
     "packageId": "com.efonly.moka",
-    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.8-94/moka-android-arm64-v8a.apk",
+    "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.9-95/moka-android-arm64-v8a.apk",
     "fileName": "moka-android-arm64-v8a.apk",
-    "sha256": "a48f592d7742ad22746a438622a7bd5288ed05b7572e3628740c1291ba640189",
-    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.8-94/SHA256SUMS.txt",
+    "sha256": "f8d8bd6a6322c8df99771b958f281b6407bd7ef0e0b0309f2a1a29d78112250b",
+    "checksumUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.9-95/SHA256SUMS.txt",
     "downloadPageUrl": "https://moka.efonly.cc/download.html#android",
     "packages": {
       "arm64-v8a": {
         "abi": "arm64-v8a",
-        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.8-94/moka-android-arm64-v8a.apk",
+        "apkUrl": "https://github.com/barks-sun/moka-site/releases/download/android-v0.7.9-95/moka-android-arm64-v8a.apk",
         "fileName": "moka-android-arm64-v8a.apk",
-        "sha256": "a48f592d7742ad22746a438622a7bd5288ed05b7572e3628740c1291ba640189",
-        "versionCode": 2094
+        "sha256": "f8d8bd6a6322c8df99771b958f281b6407bd7ef0e0b0309f2a1a29d78112250b",
+        "versionCode": 2095
       }
     }
   }
